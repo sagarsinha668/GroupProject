@@ -1,11 +1,16 @@
 import React from 'react'
-
-function route() {
+import { Route, Routes } from 'react-router-dom'
+import Home from '../pages/home'
+import Login from '../pages/login'
+import Product from '../pages/product'
+function Routing() {
   return (
-    <div> 
-        
-    </div>
+       <Routes>
+         <Route path='/' element={<Home/>} /> 
+         <Route path='/login' element={<Login/>}/>
+         <Route path='/product' element={<Product/>}/>
+       </Routes>
   )
 }
 
-export default route
+export default Routing
