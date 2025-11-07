@@ -1,12 +1,11 @@
 import { useState, useContext , useRef, useEffect } from "react"
-import {}
 import Nav from "./components/nav"
-useState
+import Routing from "./routes/route"
 function App() {
 
   return (
     <>
-      <Nav />
+      <Routing />
     </>
   )
 }

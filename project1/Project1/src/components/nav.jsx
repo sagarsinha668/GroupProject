@@ -1,12 +1,13 @@
 import '../app.css';
+import { Link } from 'react-router-dom';
+
+
 const Nav = () => {
   return (
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+      <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/product">Product</Link>
     </nav>
   );
 };
